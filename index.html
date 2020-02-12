@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>George Mason University C4I & Cyber Center GitHub Home</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1>George Mason University <br> C4I Center & Cyber Center Github Home</h1>
+
+  <template id="my-paragraph">
+    <style>
+      p {
+        color: white;
+        background-color: #666;
+        padding: 5px;
+      }
+    </style>
+    <p><slot name="my-text"></slot></p>
+  </template>
+
+  <my-paragraph>
+    <span slot="my-text">Project Listing:</span>
+  </my-paragraph>
+
+  <my-paragraph>
+    <ul slot="my-text">
+      <li><a href="c2sim/">C2SIM Project</a>: Command and Control – Simulation Interoperation (C2SIM) Project and related files</li>
+	  <li><a href="https://github.com/gmuc4i">Other repositories</a></li>
+    </ul>
+  </my-paragraph>
+
+</body>
+</html>
